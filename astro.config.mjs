@@ -5,4 +5,8 @@ export default defineConfig({
   site: 'https://estebanguzzo.com.ar',
   base: '/',
   integrations: [astroIcon()],
+  outDir: './dist',
+  build: {
+    format: 'directory'
+  }
 });
