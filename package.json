@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "postbuild": "cp CNAME dist/",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.7",
@@ -22,6 +24,8 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
-    "sass-embedded": "^1.83.4"
+    "sass-embedded": "^1.83.4",
+    "@astrojs/github": "^4.0.0",
+    "gh-pages": "^6.0.0"
   }
 }
