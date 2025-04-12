@@ -1,9 +1,8 @@
 import { defineConfig } from 'astro/config';
-import github from '@astrojs/github';
+import astroIcon from 'astro-icon';
 
 export default defineConfig({
   site: 'https://estebanguzzo.com.ar',
   base: '/',
-  output: 'static',
-  adapter: github(),
+  integrations: [astroIcon()],
 });
